@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 var bcrypt = require('bcryptjs');
-var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
 usuarioModel = require('../models/UsuarioModel');
 var SEED = require('../config/config').SEED;
@@ -10,7 +9,6 @@ var SEED = require('../config/config').SEED;
 function createLogin(req, res) {
 
     var body = req.body;
-    // {email: body.email} = condicion de busqueda
     usuarioModel.findOne({ email: body.email }, (err, usuarioDB) => {
 
         if (err) {

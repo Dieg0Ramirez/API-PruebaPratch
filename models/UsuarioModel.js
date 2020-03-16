@@ -3,7 +3,6 @@ var mongoose = require('mongoose');
 var uniqueValidator = require('mongoose-unique-validator');
 
 var Schema = mongoose.Schema
-    // npm install mongoose-unique-validator --save =========== para las validaciones de correo;
 var usuarioSchema = new Schema({
     nombre: {
         type: String,

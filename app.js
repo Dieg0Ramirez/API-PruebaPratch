@@ -2,7 +2,6 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-var path = require('path');
 
 //Inicializar variable
 var app = express();

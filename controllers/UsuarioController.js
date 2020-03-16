@@ -61,7 +61,6 @@ function saveUsuario(req, res) {
 }
 
 function updateUsuario(req, res) {
-
     var id = req.params.id
     var body = req.body;
 
@@ -129,7 +128,6 @@ function deleteUser(req, res) {
         });
     });
 };
-
 
 module.exports = {
     saveUsuario: saveUsuario,
